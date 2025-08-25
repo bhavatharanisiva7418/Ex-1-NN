@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: BHAVATHARANI S</H3>
+<H3>ENTER YOUR REGISTER NO: 212223230032</H3>
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>DATE25:08.2025</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -67,6 +67,12 @@ df.isnull().sum()
 ```
 df.duplicated()
 ```
+
+## checking for Outliers:
+```
+df.describe
+```
+
 ## Dropping string values data from dataset
 ```
 data = df.drop(['Surname', 'Geography','Gender'], axis=1)
@@ -91,10 +97,12 @@ print(y)
 
 ```
 X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
-X_train
-X_test
-y_train
-y_test
+print("X_train\n")
+print(X_train)
+print("\nLenght of X_train ",len(X_train))
+print("\nX_test\n")
+print(X_test)
+print("\nLenght of X_test ",len(X_test))
 ```
 
 ## OUTPUT:
@@ -102,8 +110,32 @@ y_test
 
 <img width="1181" height="711" alt="image" src="https://github.com/user-attachments/assets/42919919-b3bf-4e58-9ed3-2ff59cede3e2" />
 
+## Missing data:
+
+<img width="438" height="305" alt="image" src="https://github.com/user-attachments/assets/1b97a5ab-1011-43d8-be8c-a941c40e175e" />
 
 
+## Duplicated data:
+
+<img width="408" height="269" alt="image" src="https://github.com/user-attachments/assets/270f55f4-1d64-416f-a77a-65232b4d0bdc" />
+
+
+## Outliers:
+
+<img width="682" height="277" alt="image" src="https://github.com/user-attachments/assets/722a77fd-78f2-4f14-8723-fa5b841bc27c" />
+
+
+## Normalizing data:
+
+<img width="755" height="551" alt="image" src="https://github.com/user-attachments/assets/8605023f-81bb-49b0-b8c7-014ba67956fa" />
+
+## spliting dataset:
+
+<img width="648" height="301" alt="image" src="https://github.com/user-attachments/assets/778e0c99-e701-4115-8f1c-b9b10b53d31e" />
+
+## Training and testing dataset:
+
+<img width="682" height="687" alt="image" src="https://github.com/user-attachments/assets/69d4bf61-eaa8-4792-8dea-351dfb71c55e" />
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
